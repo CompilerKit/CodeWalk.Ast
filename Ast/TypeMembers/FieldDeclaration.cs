@@ -30,5 +30,7 @@ namespace CodeWalk.Ast.CSharp
 {
     public interface FieldDeclaration : EntityDeclaration
     {
+        AstNodeCollection<VariableInitializer> Variables { get; }
+        
     }
 }

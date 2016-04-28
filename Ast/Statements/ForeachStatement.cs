@@ -32,10 +32,8 @@ namespace CodeWalk.Ast.CSharp
     /// foreach (Type VariableName in InExpression) EmbeddedStatement
     /// </summary>
     public interface ForeachStatement : Statement
-    {
-
-
-        AstType VariableTypeg { get; set; }
+    { 
+        AstType VariableType { get; set; }
         string VariableName { get; set; }
         Expression InExpression { get; set; }
         Statement EmbeddedStatement { get; set; }

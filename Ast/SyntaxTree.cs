@@ -54,6 +54,7 @@ namespace CodeWalk.Ast.CSharp
         /// This is used for code completion to 'get the expression before a token - like ., &lt;, ('.
         /// </summary>
         AstNode TopExpression { get; set; }
+        IEnumerable<AstNode> GetChildIter();
     }
     public interface Error
     {

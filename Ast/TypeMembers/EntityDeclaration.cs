@@ -26,5 +26,7 @@ namespace CodeWalk.Ast.CSharp
         Modifiers Modifiers { get; set; }
         string Name { get; set; }
         AstType ReturnType { get; set; }
+
+        AstType Parent { get; set; }
     }
 }

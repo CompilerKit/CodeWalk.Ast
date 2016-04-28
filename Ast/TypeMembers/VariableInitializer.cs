@@ -31,5 +31,6 @@ namespace CodeWalk.Ast.CSharp
     public interface VariableInitializer : AstNode
     {
         string Name { get; set; }
+        Expression Initializer { get; set; }
     }
 }

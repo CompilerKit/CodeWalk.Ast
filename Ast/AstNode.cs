@@ -31,5 +31,8 @@ namespace CodeWalk.Ast.CSharp
     public interface AstNode
     {
         NodeType NodeType { get; }
+        AstNode Parent { get; }
+        bool IsNull { get; }
+        void AcceptVisitor(IAstVisitor visitor);
     }
 }

@@ -29,6 +29,6 @@ namespace CodeWalk.Ast.CSharp
     /// </remarks>
     public interface Expression : AstNode
     {
-
+        TypeInfo ResolvedTypeInfo { get; }
     }
 }

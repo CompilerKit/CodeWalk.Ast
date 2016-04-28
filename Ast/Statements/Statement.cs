@@ -28,6 +28,7 @@ namespace CodeWalk.Ast.CSharp
     /// It can be used to communicate more information in APIs, e.g. "this subnode will always be a statement"
     /// </remarks>
     public interface Statement : AstNode
-    { 
+    {
+         
     }
 }

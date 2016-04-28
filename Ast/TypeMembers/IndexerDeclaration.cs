@@ -29,16 +29,14 @@
 namespace CodeWalk.Ast.CSharp
 {
     public interface IndexerDeclaration : EntityDeclaration
-    {
-
-
+    { 
         /// <summary>
         /// Gets/Sets the type reference of the interface that is explicitly implemented.
         /// Null node if this member is not an explicit interface implementation.
         /// </summary>
-        AstType PrivateImplementationType { get; set; } 
+        AstType PrivateImplementationType { get; set; }
         Accessor Getter { get; set; }
         Accessor Setter { get; set; }
-         
+        AstNodeCollection<ParameterDeclaration> Parameters { get; }
     }
 }
