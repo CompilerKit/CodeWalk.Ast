@@ -33,8 +33,8 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface FixedStatement : Statement
     {
-        AstType Type { get; set; }
+        AstType Type { get;  }
         AstNodeCollection<VariableInitializer> Variables { get; }
-        Statement EmbeddedStatement { get; set; }
+        Statement EmbeddedStatement { get;  }
     }
 }

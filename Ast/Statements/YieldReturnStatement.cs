@@ -32,7 +32,7 @@ namespace CodeWalk.Ast.CSharp
     /// yield return Expression;
     /// </summary>
     public interface YieldReturnStatement : Statement
-    { 
-        Expression Expression { get; set; } 
+    {
+        Expression Expression { get; }
     }
 }

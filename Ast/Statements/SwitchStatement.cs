@@ -33,11 +33,10 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface SwitchStatement : Statement
     {
-
         /// <summary>
         /// switch expression
         /// </summary>
-        Expression Expression { get; set; }
+        Expression Expression { get; }
         AstNodeCollection<SwitchSection> SwitchSections { get; }
     }
 

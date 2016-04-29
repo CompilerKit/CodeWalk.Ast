@@ -36,7 +36,7 @@ namespace CodeWalk.Ast.CSharp
     /// </remarks>
     public interface Constraint : AstNode
     {
-        SimpleType TypeParameter { get; set; }
+        SimpleType TypeParameter { get; }
         AstNodeCollection<AstType> BaseTypes { get; }
     }
 }

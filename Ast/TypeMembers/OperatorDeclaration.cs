@@ -72,8 +72,8 @@ namespace CodeWalk.Ast.CSharp
     public interface OperatorDeclaration : EntityDeclaration
     {
 
-        OperatorType OperatorType { get; set; }
-        AstNodeCollection<ParameterDeclaration> Parameters { get; } 
-        BlockStatement Body { get; set; }
+        OperatorType OperatorType { get; }
+        AstNodeCollection<ParameterDeclaration> Parameters { get; }
+        BlockStatement Body { get; }
     }
 }

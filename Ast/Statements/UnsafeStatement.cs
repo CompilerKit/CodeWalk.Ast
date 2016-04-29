@@ -33,6 +33,6 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface UnsafeStatement : Statement
     {
-        BlockStatement Body { get; set; }
+        BlockStatement Body { get; }
     }
 }

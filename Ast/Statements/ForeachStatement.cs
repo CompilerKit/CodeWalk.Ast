@@ -37,6 +37,5 @@ namespace CodeWalk.Ast.CSharp
         string VariableName { get; set; }
         Expression InExpression { get; set; }
         Statement EmbeddedStatement { get; set; }
-
     }
 }

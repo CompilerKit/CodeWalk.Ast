@@ -34,7 +34,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface TextNode : AstNode
     {
-        string Text { get; set; }
+        string Text { get; }
     }
 }
 

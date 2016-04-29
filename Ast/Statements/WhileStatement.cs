@@ -34,8 +34,8 @@ namespace CodeWalk.Ast.CSharp
     public interface WhileStatement : Statement
     {
 
-        Expression Condition { get; set; } 
-        Statement EmbeddedStatement { get; set; }
-         
+        Expression Condition { get; }
+        Statement EmbeddedStatement { get; }
+
     }
 }

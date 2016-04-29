@@ -33,7 +33,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface LockStatement : Statement
     {
-        Expression Expression { get; set; }
-        Statement EmbeddedStatement { get; set; }
+        Expression Expression { get; }
+        Statement EmbeddedStatement { get;}
     }
 }

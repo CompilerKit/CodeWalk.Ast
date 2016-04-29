@@ -32,9 +32,9 @@ namespace CodeWalk.Ast.CSharp
     /// [async] Parameters => Body
     /// </summary>
     public interface LambdaExpression : Expression
-    { 
-        bool IsAsync { get; set; }
+    {
+        bool IsAsync { get; }
         AstNodeCollection<ParameterDeclaration> Parameters { get; }
-        AstNode Body { get; set; } 
+        AstNode Body { get; }
     }
 }

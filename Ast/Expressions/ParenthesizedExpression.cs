@@ -33,6 +33,6 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface ParenthesizedExpression : Expression
     {
-        Expression Expression { get; set; }
+        Expression Expression { get; }
     }
 }

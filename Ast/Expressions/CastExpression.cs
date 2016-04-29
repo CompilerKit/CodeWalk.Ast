@@ -33,8 +33,8 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface CastExpression : Expression
     { 
-        AstType Type { get; set; }
-        Expression Expression { get; set; } 
+        AstType Type { get; }
+        Expression Expression { get; } 
     }
 }
 

@@ -33,25 +33,24 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface GotoStatement : Statement
     {
-        string Label { get; set; }
+        string Label { get; }
     }
 
     /// <summary>
     /// or "goto case LabelExpression;"
     /// </summary>
     public interface GotoCaseStatement : Statement
-    {
-
+    {   
         /// <summary>
         /// Used for "goto case LabelExpression;"
         /// </summary>
-        Expression LabelExpression { get; set; }
+        Expression LabelExpression { get; }
     }
 
     /// <summary>
     /// or "goto default;"
     /// </summary>
     public interface GotoDefaultStatement : Statement
-    { 
+    {
     }
 }

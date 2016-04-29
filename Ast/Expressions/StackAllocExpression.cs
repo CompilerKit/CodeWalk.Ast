@@ -33,7 +33,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface StackAllocExpression : Expression
     {   
-        AstType Type { get; set; }
-        Expression CountExpression { get; set; } 
+        AstType Type { get;  }
+        Expression CountExpression { get;   } 
     }
 }

@@ -34,11 +34,10 @@ namespace CodeWalk.Ast.CSharp
     public interface AnonymousMethodExpression : Expression
     {
 
-        bool IsAsync { get; set; }
+        bool IsAsync { get; }
         // used to tell the difference between delegate {} and delegate () {}
-        bool HasParameterList { get; set; }
-        AstNodeCollection<ParameterDeclaration> Parameters { get; set; }
-        BlockStatement Body { get; set; }
-
+        bool HasParameterList { get; }
+        AstNodeCollection<ParameterDeclaration> Parameters { get; }
+        BlockStatement Body { get; } 
     }
 }

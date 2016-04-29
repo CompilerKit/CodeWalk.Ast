@@ -26,6 +26,6 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface TypeReferenceExpression : Expression
     {
-        AstType Type { get; set; } 
+        AstType Type { get; } 
     }
 }

@@ -23,10 +23,10 @@ namespace CodeWalk.Ast.CSharp
     public interface EntityDeclaration : AstNode
     {
         AstNodeCollection<AttributeSection> Attributes { get; }
-        Modifiers Modifiers { get; set; }
-        string Name { get; set; }
-        AstType ReturnType { get; set; }
+        Modifiers Modifiers { get; }
+        string Name { get; }
+        AstType ReturnType { get;  }
 
-        AstType Parent { get; set; }
+        AstType Parent { get;}
     }
 }

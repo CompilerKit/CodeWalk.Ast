@@ -33,9 +33,9 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface BinaryOperatorExpression : Expression
     {
-        BinaryOperatorType Operator { get; set; }
-        Expression Left { get; set; }
-        Expression Right { get; set; } 
+        BinaryOperatorType Operator { get;}
+        Expression Left { get; }
+        Expression Right { get;  } 
     }
 
     public enum BinaryOperatorType

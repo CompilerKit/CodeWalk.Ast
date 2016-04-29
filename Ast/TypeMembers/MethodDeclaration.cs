@@ -35,10 +35,10 @@ namespace CodeWalk.Ast.CSharp
         /// Gets/Sets the type reference of the interface that is explicitly implemented.
         /// Null node if this member is not an explicit interface implementation.
         /// </summary>
-        AstType PrivateImplementationType { get; set; }
-        AstNodeCollection<TypeParameterDeclaration> TypeParameters { get; set; }
-        AstNodeCollection<ParameterDeclaration> Parameters { get; set; }
-        BlockStatement Body { get; set; }
+        AstType PrivateImplementationType { get; }
+        AstNodeCollection<TypeParameterDeclaration> TypeParameters { get; }
+        AstNodeCollection<ParameterDeclaration> Parameters { get; }
+        BlockStatement Body { get; }
         bool IsExtensionMethod { get; }
 
     }

@@ -30,9 +30,8 @@ namespace CodeWalk.Ast.CSharp
 {
     public interface SimpleType : AstType
     {
-        string Identifier { get; set; }
-        AstNodeCollection<AstType> TypeArguments { get; set; }
-
+        string Identifier { get; }
+        AstNodeCollection<AstType> TypeArguments { get; }
     }
 }
 

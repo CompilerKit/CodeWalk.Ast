@@ -34,8 +34,8 @@ namespace CodeWalk.Ast.CSharp
     public interface NamespaceDeclaration : AstNode
     {
 
-        AstType NamespaceName { get; set; }
-        string Name { get; set; }
+        AstType NamespaceName { get; }
+        string Name { get; }
         /// <summary>
         /// Gets the full namespace name (including any parent namespaces)
         /// </summary>

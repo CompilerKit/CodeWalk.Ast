@@ -33,6 +33,6 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface UncheckedExpression : Expression
     {
-        Expression Expression { get; set; }
+        Expression Expression { get; }
     }
 }

@@ -33,6 +33,6 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface ExpressionStatement : Statement
     {
-        Expression Expression { get; set; } 
+        Expression Expression { get;  } 
     }
 }

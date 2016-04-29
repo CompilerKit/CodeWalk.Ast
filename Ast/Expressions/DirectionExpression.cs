@@ -39,8 +39,8 @@ namespace CodeWalk.Ast.CSharp
     /// ref Expression
     /// </summary>
     public interface DirectionExpression : Expression
-    {   
-        FieldDirection FieldDirection { get; set; }
-        Expression Expression { get; set; } 
+    {
+        FieldDirection FieldDirection { get; }
+        Expression Expression { get; }
     }
 }

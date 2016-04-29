@@ -42,10 +42,10 @@ namespace CodeWalk.Ast.CSharp
     public interface TypeDeclaration : EntityDeclaration
     {
 
-        ClassType ClassType { get; set; }
+        ClassType ClassType { get; }
         AstNodeCollection<TypeParameterDeclaration> TypeParameters { get; }
         AstNodeCollection<AstType> BaseTypes { get; }
-        AstNodeCollection<Constraint> Constraints { get; } 
-        AstNodeCollection<EntityDeclaration> Members { get; } 
+        AstNodeCollection<Constraint> Constraints { get; }
+        AstNodeCollection<EntityDeclaration> Members { get; }
     }
 }

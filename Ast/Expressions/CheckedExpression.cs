@@ -33,6 +33,6 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface CheckedExpression : Expression
     {
-        Expression Expression { get; set; } 
+        Expression Expression { get; } 
     }
 }

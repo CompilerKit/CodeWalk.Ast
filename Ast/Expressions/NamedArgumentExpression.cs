@@ -26,7 +26,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface NamedArgumentExpression : Expression
     {
-        string Name { get; set; }
-        Expression Expression { get; set; }
+        string Name { get; }
+        Expression Expression { get; }
     }
 }

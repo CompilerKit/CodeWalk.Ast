@@ -47,7 +47,7 @@ namespace CodeWalk.Ast.CSharp
         //public readonly static TokenRole ReftypeKeywordRole = new TokenRole ("__reftype");
         //public readonly static TokenRole MakerefKeywordRole = new TokenRole ("__makeref");
 
-        UndocumentedExpressionType UndocumentedExpressionType { get; set; }
+        UndocumentedExpressionType UndocumentedExpressionType { get; }
 
         //public CSharpTokenNode UndocumentedToken
         //{

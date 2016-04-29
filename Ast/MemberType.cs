@@ -29,10 +29,10 @@
 namespace CodeWalk.Ast.CSharp
 {
     public interface MemberType : AstType
-    { 
-        bool IsDoubleColon { get; set; }
-        AstType Target { get; set; }
-        string MemberName { get; set; }
+    {
+        bool IsDoubleColon { get; }
+        AstType Target { get; }
+        string MemberName { get; }
         AstNodeCollection<AstType> TypeArguments { get; }
     }
 }

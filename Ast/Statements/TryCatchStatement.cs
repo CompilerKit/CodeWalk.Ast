@@ -32,26 +32,19 @@ namespace CodeWalk.Ast.CSharp
     /// try TryBlock CatchClauses finally FinallyBlock
     /// </summary>
     public interface TryCatchStatement : Statement
-    {
-
-
-        BlockStatement TryBlock { get; set; }
+    { 
+        BlockStatement TryBlock { get; }
         AstNodeCollection<CatchClause> CatchClauses { get; }
-        BlockStatement FinallyBlock { get; }
-
+        BlockStatement FinallyBlock { get; } 
     }
 
     /// <summary>
     /// catch (Type VariableName) { Body }
     /// </summary>
     public interface CatchClause : AstNode
-    {
-
-        AstType Type { get; set; }
-
-        string VariableName { get; set; }
-
-        BlockStatement Body { get; set; }
-         
+    {  
+        AstType Type { get;  } 
+        string VariableName { get;  } 
+        BlockStatement Body { get;  } 
     }
 }

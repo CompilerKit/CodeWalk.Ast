@@ -41,7 +41,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface Accessor : EntityDeclaration
     {
-        AccessorKind AccessorKind { get; set; }
-        BlockStatement Body { get; set; } 
+        AccessorKind AccessorKind { get; }
+        BlockStatement Body { get; } 
     }
 }

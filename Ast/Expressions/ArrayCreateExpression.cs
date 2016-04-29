@@ -34,8 +34,7 @@ namespace CodeWalk.Ast.CSharp
         /// Gets additional array ranks (those without size info).
         /// Empty for "new int[5,1]"; will contain a single element for "new int[5][]".
         /// </summary>
-        AstNodeCollection<ArraySpecifier> AdditionalArraySpecifiers { get; } 
+        AstNodeCollection<ArraySpecifier> AdditionalArraySpecifiers { get; }
         ArrayInitializerExpression Initializer { get; set; }
-
     }
 }

@@ -60,13 +60,13 @@ namespace CodeWalk.Ast.CSharp
     public interface PreProcessorDirective : AstNode
     {
 
-        PreProcessorDirectiveType Type { get; set; }
-        string Argument { get; set; }
+        PreProcessorDirectiveType Type { get; }
+        string Argument { get; }
 
         /// <summary>
         /// For an '#if' directive, specifies whether the condition evaluated to true.
         /// </summary>
-        bool Take { get; set; }
+        bool Take { get; }
     }
 }
 

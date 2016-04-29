@@ -33,10 +33,8 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface IfElseStatement : Statement
     {
-
-        Expression Condition { get; set; }
-        Statement TrueStatement { get; set; }
-        Statement FalseStatement { get; set; }
-         
+        Expression Condition { get; }
+        Statement TrueStatement { get; }
+        Statement FalseStatement { get; }
     }
 }

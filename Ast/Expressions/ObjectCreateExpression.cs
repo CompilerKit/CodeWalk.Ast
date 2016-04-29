@@ -33,8 +33,8 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface ObjectCreateExpression : Expression
     {
-        AstType Type { get; set; }
+        AstType Type { get; }
         AstNodeCollection<Expression> Arguments { get; }
-        ArrayInitializerExpression Initializer { get; set; } 
+        ArrayInitializerExpression Initializer { get; }
     }
 }

@@ -53,28 +53,28 @@ namespace CodeWalk.Ast.CSharp
     {
         //into...
 
-        QueryExpression PrecedingQuery { get; set; }
-        string Identifier { get; set; }
+        QueryExpression PrecedingQuery { get; }
+        string Identifier { get; }
     }
 
     public interface QueryFromClause : QueryClause
     {
-        AstType Type { get; set; }
-        string Identifier { get; set; }
-        Expression Expression { get; set; }
+        AstType Type { get; }
+        string Identifier { get; }
+        Expression Expression { get; }
 
     }
 
     public interface QueryLetClause : QueryClause
     {
-        string Identifier { get; set; }
-        Expression Expression { get; set; }
+        string Identifier { get; }
+        Expression Expression { get; }
     }
 
 
     public interface QueryWhereClause : QueryClause
     {
-        Expression Condition { get; set; }
+        Expression Condition { get; }
     }
 
     /// <summary>
@@ -83,12 +83,12 @@ namespace CodeWalk.Ast.CSharp
     public interface QueryJoinClause : QueryClause
     {
         bool IsGroupJoin { get; }
-        AstType Type { get; set; }
-        string JoinIdentifier { get; set; }
-        Expression InExpression { get; set; }
-        Expression OnExpression { get; set; }
-        Expression EqualsExpression { get; set; }
-        string IntoIdentifier { get; set; }
+        AstType Type { get; }
+        string JoinIdentifier { get; }
+        Expression InExpression { get; }
+        Expression OnExpression { get; }
+        Expression EqualsExpression { get; }
+        string IntoIdentifier { get; }
     }
 
     public interface QueryOrderClause : QueryClause
@@ -99,8 +99,8 @@ namespace CodeWalk.Ast.CSharp
     public interface QueryOrdering : AstNode
     {
 
-        Expression Expression { get; set; }
-        QueryOrderingDirection Direction { get; set; }
+        Expression Expression { get; }
+        QueryOrderingDirection Direction { get; }
     }
 
     public enum QueryOrderingDirection
@@ -112,12 +112,12 @@ namespace CodeWalk.Ast.CSharp
 
     public interface QuerySelectClause : QueryClause
     {
-        Expression Expression { get; set; }
+        Expression Expression { get; }
     }
 
     public interface QueryGroupClause : QueryClause
     {
-        Expression Projection { get; set; }
-        Expression Key { get; set; } 
+        Expression Projection { get; }
+        Expression Key { get; }
     }
 }

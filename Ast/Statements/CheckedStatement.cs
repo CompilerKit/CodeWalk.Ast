@@ -33,7 +33,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface CheckedStatement : Statement
     {
-        BlockStatement Body { get; set; }
+        BlockStatement Body { get; }
        
     }
 }

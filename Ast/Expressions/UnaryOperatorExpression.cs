@@ -27,14 +27,14 @@
 // THE SOFTWARE. 
 
 namespace CodeWalk.Ast.CSharp
-{   
+{
     /// <summary>
     /// Operator Expression
     /// </summary>
     public interface UnaryOperatorExpression : Expression
     {
-        UnaryOperatorType Operator { get; set; }
-        Expression Expression { get; set; }
+        UnaryOperatorType Operator { get; }
+        Expression Expression { get; }
     }
 
     public enum UnaryOperatorType

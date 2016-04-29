@@ -33,6 +33,6 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface TypeOfExpression : Expression
     { 
-        AstType Type { get; set; } 
+        AstType Type { get; } 
     }
 }

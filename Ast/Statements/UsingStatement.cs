@@ -36,8 +36,7 @@ namespace CodeWalk.Ast.CSharp
         /// <summary>
         /// Either a VariableDeclarationStatement, or an Expression.
         /// </summary>
-        AstNode ResourceAcquisition { get; set; }
-        Statement EmbeddedStatement { get; set; }
-
+        AstNode ResourceAcquisition { get; }
+        Statement EmbeddedStatement { get; }
     }
 }

@@ -39,11 +39,11 @@ namespace CodeWalk.Ast.CSharp
 
     public interface ParameterDeclaration : AstNode
     {
-        AstNodeCollection<AttributeSection> Attributes { get; set; }
-        ParameterModifier ParameterModifier { get; set; }
-        AstType Type { get; set; }
-        string Name { get; set; }
-        Expression DefaultExpression { get; set; }
+        AstNodeCollection<AttributeSection> Attributes { get;  }
+        ParameterModifier ParameterModifier { get;  }
+        AstType Type { get;}
+        string Name { get;  }
+        Expression DefaultExpression { get;  }
     }
 }
 

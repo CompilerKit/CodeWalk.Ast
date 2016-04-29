@@ -32,8 +32,8 @@ namespace CodeWalk.Ast.CSharp
     /// default(Type)
     /// </summary>
     public interface DefaultValueExpression : Expression
-    { 
-        AstType Type { get; set; } 
+    {
+        AstType Type { get; }
     }
 }
 

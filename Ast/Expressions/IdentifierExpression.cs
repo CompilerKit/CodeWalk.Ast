@@ -30,7 +30,7 @@ namespace CodeWalk.Ast.CSharp
 {
     public interface IdentifierExpression : Expression
     {
-        string Identifier { get; set; }
+        string Identifier { get; }
         AstNodeCollection<AstType> TypeArguments { get; }
     }
 }

@@ -30,6 +30,6 @@ namespace CodeWalk.Ast.CSharp
 {
     public interface Identifier : AstNode
     {
-        string Name { get; set; }
+        string Name { get; }
     }
 }

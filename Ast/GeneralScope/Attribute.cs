@@ -32,8 +32,8 @@ namespace CodeWalk.Ast.CSharp
     /// Attribute(Arguments)
     /// </summary>
     public interface Attribute : AstNode
-    { 
-        AstType Type { get; set; }
+    {
+        AstType Type { get; }
         AstNodeCollection<Expression> Arguments { get; }
 
     }

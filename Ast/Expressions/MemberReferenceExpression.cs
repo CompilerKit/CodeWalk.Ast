@@ -33,7 +33,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface MemberReferenceExpression : Expression
     {
-        Expression Target { get; set; }
-        string MemberName { get; set; }
+        Expression Target { get; }
+        string MemberName { get; }
     }
 }

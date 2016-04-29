@@ -33,6 +33,6 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface ExternAliasDeclaration : AstNode
     {
-        string Name { get; set; }
+        string Name { get; }
     }
 }

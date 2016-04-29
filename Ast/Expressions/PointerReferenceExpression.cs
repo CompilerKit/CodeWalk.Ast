@@ -34,8 +34,8 @@ namespace CodeWalk.Ast.CSharp
     public interface PointerReferenceExpression : Expression
     {
 
-        Expression Target { get; set; } 
-        string MemberName { get; set; } 
+        Expression Target { get; }
+        string MemberName { get; }
         AstNodeCollection<AstType> TypeArguments { get; }
 
     }

@@ -54,12 +54,12 @@ namespace CodeWalk.Ast.CSharp
 
     public interface Comment : AstNode
     {
-        CommentType CommentType { get; set; } 
+        CommentType CommentType { get; }
         /// <summary>
         /// Returns true if the <see cref="CommentType"/> is Documentation or MultiLineDocumentation.
         /// </summary>
         bool IsDocumentation { get; }
-        string Content { get; set; } 
+        string Content { get; }
     }
 }
 

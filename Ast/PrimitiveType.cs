@@ -30,7 +30,7 @@ namespace CodeWalk.Ast.CSharp
 {
     public interface PrimitiveType : AstType
     {
-        string Keyword { get; set; }
+        string Keyword { get; }
         KnownTypeCode KnownTypeCode { get; }
     }
 

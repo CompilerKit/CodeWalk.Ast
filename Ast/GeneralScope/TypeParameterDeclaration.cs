@@ -17,7 +17,7 @@
 // FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
- 
+
 namespace CodeWalk.Ast.CSharp
 {
     /// <summary>
@@ -31,8 +31,8 @@ namespace CodeWalk.Ast.CSharp
     {
 
         AstNodeCollection<AttributeSection> Attributes { get; }
-        VarianceModifier Variance { get; set; }
-        string Name { get; set; }
+        VarianceModifier Variance { get; }
+        string Name { get; }
 
     }
     /// <summary>

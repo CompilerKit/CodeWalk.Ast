@@ -25,7 +25,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
- 
+
 
 namespace CodeWalk.Ast.CSharp
 {
@@ -34,8 +34,8 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface ConditionalExpression : Expression
     {
-        Expression Condition { get; set; }
-        Expression TrueExpression { get; set; }
-        Expression FalseExpression { get; set; }
+        Expression Condition { get; }
+        Expression TrueExpression { get; }
+        Expression FalseExpression { get; }
     }
 }

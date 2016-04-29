@@ -32,8 +32,8 @@ namespace CodeWalk.Ast.CSharp
     {
 
         AstNodeCollection<ParameterDeclaration> Parameters { get; }
-        ConstructorInitializer Initializer { get; set; }
-        BlockStatement Body { get; set; }
+        ConstructorInitializer Initializer { get;  }
+        BlockStatement Body { get;  }
     }
 
     public enum ConstructorInitializerType
@@ -45,7 +45,7 @@ namespace CodeWalk.Ast.CSharp
 
     public interface ConstructorInitializer : AstNode
     {
-        ConstructorInitializerType ConstructorInitializerType { get; set; }
+        ConstructorInitializerType ConstructorInitializerType { get;  }
         AstNodeCollection<Expression> Arguments { get; }
     }
 }

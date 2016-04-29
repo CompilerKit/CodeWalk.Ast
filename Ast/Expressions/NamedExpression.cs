@@ -34,8 +34,8 @@ namespace CodeWalk.Ast.CSharp
     /// This expression is used in object initializers and for named attribute arguments [Attr(FieldName = value)].
     /// </summary>
     public interface NamedExpression : Expression
-    { 
-        string Name { get; set; } 
-        Expression Expression { get; set; } 
+    {
+        string Name { get; }
+        Expression Expression { get; }
     }
 }

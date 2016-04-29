@@ -30,10 +30,10 @@ namespace CodeWalk.Ast.CSharp
 {
     public interface ComposedType : AstType
     {
-        AstType BaseType { get; set; } 
-        bool HasNullableSpecifier { get; set; } 
-        int PointerRank { get; set; } 
-        AstNodeCollection<ArraySpecifier> ArraySpecifiers { get; set; }
+        AstType BaseType { get; }
+        bool HasNullableSpecifier { get; }
+        int PointerRank { get; }
+        AstNodeCollection<ArraySpecifier> ArraySpecifiers { get; }
 
     }
 

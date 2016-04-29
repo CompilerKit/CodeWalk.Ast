@@ -33,8 +33,8 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface DoWhileStatement : Statement
     { 
-        Statement EmbeddedStatement { get; set; } 
-        Expression Condition { get; set; } 
+        Statement EmbeddedStatement { get;  } 
+        Expression Condition { get;  } 
     }
 }
 

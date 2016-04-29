@@ -30,6 +30,6 @@ namespace CodeWalk.Ast.CSharp
 {
     public interface DestructorDeclaration : EntityDeclaration
     { 
-        BlockStatement Body { get; set; } 
+        BlockStatement Body { get; } 
     }
 }

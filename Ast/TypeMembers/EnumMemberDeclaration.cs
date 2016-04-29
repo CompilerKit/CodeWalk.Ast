@@ -30,7 +30,7 @@ namespace CodeWalk.Ast.CSharp
 {
     public interface EnumMemberDeclaration : EntityDeclaration
     {   
-        Expression Initializer { get; set; } 
+        Expression Initializer { get;  } 
     }
 }
 

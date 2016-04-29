@@ -33,7 +33,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface AnonymousTypeCreateExpression : Expression
     { 
-        AstNodeCollection<Expression> Initializers { get; set; } 
+        AstNodeCollection<Expression> Initializers { get;  } 
     }
 }
 

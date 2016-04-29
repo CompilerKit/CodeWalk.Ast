@@ -40,9 +40,9 @@ namespace CodeWalk.Ast.CSharp
         /// only a single statement for "for (int a = 2, b = 1; a > b; a--)" (a single VariableDeclarationStatement with two variables)
         /// </summary>
         AstNodeCollection<Statement> Initializers { get; } 
-        Expression Condition { get; set; } 
+        Expression Condition { get; } 
         AstNodeCollection<Statement> Iterators { get; } 
-        Statement EmbeddedStatement { get; set; }
+        Statement EmbeddedStatement { get; }
          
     }
 }

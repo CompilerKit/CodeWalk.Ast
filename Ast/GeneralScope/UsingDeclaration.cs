@@ -33,7 +33,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface UsingDeclaration : AstNode
     {
-        AstType Import { get; set; }
+        AstType Import { get; }
         string Namespace { get; }
 
     }

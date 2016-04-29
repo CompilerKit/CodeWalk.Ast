@@ -33,6 +33,6 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface LabelStatement : Statement
     {
-        string Label { get; set; }  
+        string Label { get; }  
     }
 }

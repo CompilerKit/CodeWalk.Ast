@@ -30,27 +30,27 @@ namespace CodeWalk.Ast.CSharp
         /// Gets/Sets the operator type.
         /// This property is only used when SymbolKind==Operator.
         /// </summary>
-        OperatorType OperatorType { get; set; }
+        OperatorType OperatorType { get; }
 
         /// <summary>
         /// Gets/Sets whether a parameter list was provided.
         /// </summary>
-        bool HasParameterList { get; set; }
+        bool HasParameterList { get; }
 
         /// <summary>
         /// Gets/Sets the declaring type.
         /// </summary>
-        AstType DeclaringType { get; set; }
+        AstType DeclaringType { get; }
         /// <summary>
         /// Gets/sets the member name.
         /// This property is only used when SymbolKind==None.
         /// </summary>
-        string MemberName { get; set; }
+        string MemberName { get; }
         /// <summary>
         /// Gets/Sets the return type of conversion operators.
         /// This property is only used when SymbolKind==Operator and OperatorType is explicit or implicit.
         /// </summary>
-        AstType ConversionOperatorReturnType { get; set; }
+        AstType ConversionOperatorReturnType { get; }
 
         AstNodeCollection<AstType> TypeArguments { get; }
 

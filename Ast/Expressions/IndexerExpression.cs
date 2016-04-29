@@ -33,7 +33,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface IndexerExpression : Expression
     {
-        Expression Target { get; set; }
+        Expression Target { get; }
         AstNodeCollection<Expression> Arguments { get; }
     }
 }

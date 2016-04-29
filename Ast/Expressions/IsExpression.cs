@@ -33,8 +33,8 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface IsExpression : Expression
     {
-        Expression Expression { get; set; }
-        AstType Type { get; set; }
+        Expression Expression { get; }
+        AstType Type { get; }
     }
 }
 

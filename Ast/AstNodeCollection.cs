@@ -17,17 +17,24 @@
 // FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
- 
-using System.Collections.Generic; 
+
+using System.Collections.Generic;
 
 namespace CodeWalk.Ast.CSharp
 {
+    public interface IReadOnlyList<T> : IEnumerable<T>
+    {
+        int Count { get; }
+        T this[int index] { get; }
+    }
     /// <summary>
     /// Represents the children of an AstNode that have a specific role.
     /// </summary>
-    public interface AstNodeCollection<T> : ICollection<T>
+    public interface AstNodeCollection<T> : IReadOnlyList<T>
         where T : AstNode
     {
     }
+
+
 }
 

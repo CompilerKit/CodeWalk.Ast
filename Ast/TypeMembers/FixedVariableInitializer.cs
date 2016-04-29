@@ -33,8 +33,8 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface FixedVariableInitializer : AstNode
     {
-        string Name { get; set; }
-        Expression CountExpression { get; set; } 
+        string Name { get; }
+        Expression CountExpression { get;  } 
     }
 }
 

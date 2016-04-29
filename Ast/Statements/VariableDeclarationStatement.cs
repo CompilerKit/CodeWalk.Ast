@@ -30,8 +30,8 @@ namespace CodeWalk.Ast.CSharp
 {
     public interface VariableDeclarationStatement : Statement
     {
-        Modifiers Modifiers { get; set; }
-        AstType Type { get; set; }
-        AstNodeCollection<VariableInitializer> Variables { get; set; }
+        Modifiers Modifiers { get; }
+        AstType Type { get; }
+        AstNodeCollection<VariableInitializer> Variables { get; }
     }
 }

@@ -33,6 +33,6 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface PrimitiveExpression : Expression
     {
-        object Value { get; set; } 
+        object Value { get; }
     }
 }

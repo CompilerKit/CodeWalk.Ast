@@ -40,8 +40,8 @@ namespace CodeWalk.Ast.CSharp
         /// Gets/Sets the type reference of the interface that is explicitly implemented.
         /// Null node if this member is not an explicit interface implementation.
         /// </summary>
-        AstType PrivateImplementationType { get; set; } 
-        Accessor AddAccessor { get; set; } 
-        Accessor RemoveAccessor { get; set; } 
+        AstType PrivateImplementationType { get;  } 
+        Accessor AddAccessor { get; } 
+        Accessor RemoveAccessor { get;  } 
     }
 }

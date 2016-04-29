@@ -33,7 +33,7 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface AttributeSection : AstNode
     {
-        string AttributeTarget { get; set; }
+        string AttributeTarget { get; }
         AstNodeCollection<Attribute> Attributes { get; }
     }
 }

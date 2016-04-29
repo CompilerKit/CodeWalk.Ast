@@ -33,9 +33,9 @@ namespace CodeWalk.Ast.CSharp
     /// </summary>
     public interface AssignmentExpression : Expression
     {
-        AssignmentOperatorType Operator { get; set; }
-        Expression Left { get; set; }
-        Expression Right { get; set; }
+        AssignmentOperatorType Operator { get; }
+        Expression Left { get; }
+        Expression Right { get; }
     }
 
     public enum AssignmentOperatorType
